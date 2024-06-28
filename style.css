@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#inside {
+    display: flex;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.portfolio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.on {
+    opacity: 1;
+}
+
+.prev-button,
+.next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.prev-button img,
+.next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.prev-button {
+    transform: rotate(180deg);
+}
+
+.parallax {
+    height: 900px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax.color1 .titulo-titulo {
+    color: #ff0000;
+}
+
+.parallax.color2 .titulo-artista1 {
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+.parallax.color3 .titulo-artista2 {
+    color: #0000ff;
+    margin-bottom: 10px;
+}
+
+.parallax.color4 .titulo-premiacao {
+    color: #ff006a;
+}
+
+.parallax .titulo-empresa {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.parallax#nome-empresa {
+    background-image: url('images/capa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.parallax.color1 {
+    background-image: url('images/fundo.jpg');
+    color: #bb74a0;
+    
+    font-size: large;
+    flex-direction: column;
+    justify-content: baseline;
+    text-align: center;
+    height: 700px;
+}
+
+.parallax.color1 .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parallax.color1 .gallery .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax.color1 .gallery img {
+    max-width: 400px;
+    max-height: 300px;
+    padding-left: 10px;
+}
+
+.parallax.color2 {
+    background-image: url('images/fundo.jpg');
+    color: #333;
+}
+
+.parallax.color3 {
+    background-image: url("./images/fundo.jpg");
+    color: #333;
+}
+
+.parallax.color4 {
+    background-image: url('images/capa.png');
+}
+
+.parallax.color5 {
+    background-image: url("./images/fundo.jpg");
+    color: #fff;
+}
+
+.parallax.color6 {
+    background-color: #da0101;
+    color: #fff;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.parallax#artes-fotos .gallery img {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.parallax#artista1,
+.parallax#artista2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.parallax#artista1 .artist-info,
+.parallax#artista2 .artist-info {
+    width: 45%;
+}
+
+.parallax#artista1 .carousel,
+.parallax#artista2 .carousel {
+    width: 45%;
+    position: relative;
+}
+
+.carousel img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+.parallax#local-mapa iframe {
+    width: 700px;
+    height: 500px;
+    border: 0;
+}
+
+.parallax#agendamento button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.parallax#agendamento button:hover {
+    background-color: #e65c00;
+}
+
+
+
+#agendar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.parallax {
+    background-color: #44aacc;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.parallax#premiacoes .award img {
+    width: 600px;
+    height: 500px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.titulo-premiacao {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.awards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.award {
+    max-width: 50%; /* Garante que os itens não excedam 30% */
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(189, 173, 173, 0.1);
+}
+.award p{
+    font-size: large;
+    width: 600px;
+}
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.footer h3{
+    display: block;
+}
+.footer div {
+    flex: 1;
+    margin: 10px;
+}
+.footer a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.bio {
+    text-align: center;
+    max-width: 350px;
+}
+
+.bio .introducao {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.bio .pessoal {
+    padding: 0 10%;
+}
+
+.calendar {
+    text-align: center;
+}
