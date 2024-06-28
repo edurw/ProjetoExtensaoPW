@@ -76,7 +76,7 @@
 }
 
 .parallax.color2 .titulo-artista1 {
-    color: #00ff00;
+    color: #0000ff;
     margin-bottom: 10px;
 }
 
@@ -98,7 +98,7 @@
     background-image: url('images/capa.png');
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 100vh;
 }
 
 .parallax.color1 {
